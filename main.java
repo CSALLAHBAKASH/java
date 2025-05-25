@@ -4,6 +4,15 @@ public class Main {
         return a + b;
     }
 
+    // Multiplies each element of the array by 10 and returns a new array
+    public static int[] multiplyByTen(int[] arr) {
+        int[] result = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            result[i] = arr[i] * 10;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         // Print a message
         System.out.println("Hello, Java!");
@@ -27,6 +36,14 @@ public class Main {
         System.out.println("Counting from 1 to 5:");
         for (int i = 1; i <= 5; i++) {
             System.out.println(i);
+        }
+
+        // Example usage of multiplyByTen
+        int[] numbers = {1, 2, 3, 4, 5};
+        int[] multiplied = multiplyByTen(numbers);
+        System.out.println("Array elements multiplied by 10:");
+        for (int num : multiplied) {
+            System.out.println(num);
         }
     }
 }
