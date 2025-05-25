@@ -16,3 +16,6 @@ print(a)
 
 #%%
 print("hamza, " *5)
+
+a = input("Enter your name: ")
+print(f"your name is {a}")
